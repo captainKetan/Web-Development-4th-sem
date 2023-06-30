@@ -1,0 +1,510 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Bootstrap jQuery -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      }
+    .tab {     
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+
+
+    }
+
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 14px 8px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {  
+      padding: 0px 12px;
+      border-bottom: 1px solid #ccc;
+      border-top:1px solid #ccc;
+      border-left: none;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      height: 40px;
+      width: 40px;
+    }
+
+    .nav > .nav-item > .active {
+      color: black;
+      font-weight: bold;
+    }
+
+    ul.nav > li > a:hover {
+      background-color: #1e23f0;
+      color: #683034;
+      border-style: solid;
+      font-weight: bold;     
+    }
+
+  </style>
+  <title>SCL</title>
+</head>
+<body style="background-image: url('try1.jpg'); background-attachment: fixed;">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-muted">
+      <div class="col-4 navbar-brand ">
+        <img src="scllogo.png" width="50" height="50" alt="" style="border-radius: 5px;">
+      </div>
+      <div class="col-6 mt-2">
+        <h6><b><font size="5">&nbsp&nbsp&nbsp&nbsp&nbspSemi-Conductor Laboratory</font></b>
+          <br>
+          <b>Ministry of Electronics & Information Technology</b></h6>
+        </div>
+        <div>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <img class="pull-right" src="digit.png" class="img-fluid" id="eye" width="120px" height="60px">
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <hr>
+
+      <h1 style="text-align: center;"><b>SCL FIRE AND SAFETY SYSTEMS</b></h1>
+      <i>
+        <marquee style="font-family: Book Antiqua" scrolldelay="100" bgcolor="#4169e1" height="35"><font size="5" color="white">
+          <q>Safety is no accident.</q>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <q>Safety is as simple as ABC. Always be careful.</q>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <q>The safest risk is the one you did not take.</q>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <q>Be aware-Takecare.</q></font>
+        </marquee>
+      </i>
+    </div>
+
+
+    <div class="container">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <picture>
+                <source srcset="101.jpg" media="(min-width: 1000px)" />
+                <source srcset="102.jpg" media="(min-width: 769px)" />
+                <source srcset="103.jpg" media="(min-width: 577px)" />
+                <img srcset="104.jpg" alt="responsive image" class="d-block img-fluid">
+              </picture>
+          </div>
+          <div class="carousel-item">
+              <picture>
+                <source srcset="201.jpg" media="(min-width: 1000px)"/>
+                <source srcset="202.jpg" media="(min-width: 769px)"/>
+                <source srcset="203.jpg" media="(min-width: 577px)"/>
+                <img srcset="204.jpg" alt="responsive image" class="d-block img-fluid"/>
+              </picture>
+          </div>
+          <div class="carousel-item">
+              <picture>
+                <source srcset="301.jpg" media="(min-width: 1000px)"/>
+                <source srcset="302.jpg" media="(min-width: 769px)"/>
+                <source srcset="303.jpg" media="(min-width: 577px)"/>
+                <img srcset="304.jpg" alt="responsive image" class="d-block img-fluid">
+              </picture>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid py-1"> <!--HORIZONTAL MENU-->
+      <ul class="nav nav-pills justify-content-center" style="background-color: lightblue;" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link  " href="All PDF Links/Left side/Safety Policy-Final.pdf" target="_blank" style="background-color: lightblue;">SAFETY POLICY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="compliances.html" target="_blank" style="background-color: lightblue;">STATUTORY COMPLIANCES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="downloads.html" target="_blank" style="background-color: lightblue;">DOWNLOADS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="All PDF Links/Left side/article.pdf" target="_blank" style="background-color: lightblue;">ARTICLE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="All PDF Links/Left side/Emergency Numbers.pdf" target="_blank" style="background-color: lightblue;">EMERGENCY CONTACT NUMBERS</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+    <div class="container-fluid py-1">
+      <div class="row">
+        <div class="col-3">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">HOME</button>
+            <button class="tablinks" onclick="openCity(event, 'safetysys')">SAFETY SYSTEM</button>
+            <button class="tablinks" onclick="openCity(event, 'inemerge')">IN EMERGENCY</button>
+            <button class="tablinks" onclick="openCity(event, 'iclassification')">INCIDENT CLASSIFICATION</button>
+            <button class="tablinks" onclick="openCity(event, 'msds')">MSDS</button>
+            <button class="tablinks" onclick="openCity(event, 'emt')">EMERGENCY MEDICAL TREATMENT</button>
+          </div>
+        </div>
+        <div class="col-9">
+        <div id="home" class="tabcontent">
+          <div class="my-2 mx-2">
+            Semi-Conductor Laboratory (SCL) strives on the policy to manage its activities in a responsible manner as to avoid causing any risks to the health and safety of its personnel. With the technology upgradation and rapid expansion of newer processes, self-help in minimising the occurrence/devastating effects of accidents has become essential for all industries.<br>
+            <br>
+            Wafer processing and its allied operations at SCL require handling of large number of hazardous gases and chemicals. Various gases/ chemicals are pyrophoric, toxic, corrosive or flammable in nature. To ensure incident free operations at SCL, the installed safety systems and their up-keep thus is of great importance. Different safety installations, comprising of fire protection and detection system, Toxic Gas Monitoring (TGM) system, Chemical Leak Detection system, etc. are maintained for 100% up-time on 24x7 basis.<br>
+            <br>
+            Fire & Safety Section (FSS) is entrusted with the responsibilities to ensure overall safety of operations at SCL. Main functions of FSS involves:
+            <ul type="square">
+              <li>Up-keep of various safety installations viz. Fire Hydrant and Sprinkler System, Fire Detection system, Toxic Gas Monitoring system, Chemical Leak Detection system etc.</li>
+              <li>Attending emergency calls.</li>
+              <li>Planning for ERT functions.</li>
+              <li>Conducting safety mock drill.</li>
+              <li>Conducting safety training programmes for SCL staff/ contractor's labour at site.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="safetysys" class="tabcontent">
+          <div class="mx-2 my-2 ">
+            <strong>Following life safety systems are installed within the campus:
+            </strong>
+            <ul>
+              <li>Fire Suppression System - Yard Hydrant & Wet Riser, High Velocity Water spray, Automatic Sprinkler system.</li>
+              <li>Toxic Gas Detection System to monitor all strategic location for monitoring accidental release, if any, of hazardous process gases in ppb levels.</li>
+              <li>Addressable Analog Fire Alarm System and Repeater Panels interfaced with Gas Detection System.</li>
+              <li>All Fire Alarm System integrated with Public Address System.</li>
+              <li>First Aid Fire Fighting Equipment - Hose Reel, Fire Extinguishers.</li>
+              <li>Safety Eye & Body Showers.</li>
+              <li>Portable Air Breathing Unit are deployed at all strategic locations.</li>
+              <li>Also, in-house Fire Station is manned on 24x7 basis by trained personnel of CISF fire wing. The station is equipped with:
+                <ul type="disc">
+                  <li>Fire Tender</li>
+                  <li>Portable Fire Pump</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="inemerge" class="tabcontent">
+          <div class="mx-2 my-2">
+            <ol type="1">
+              <li><a href="All PDF Links/IN EMERGENCY/IN CASE OF FIRE EMERGENCY.pdf" target="_blank">IN CASE OF FIRE EMERGENCY</a></li>
+              <li><a href="All PDF Links/IN EMERGENCY/IN CASE OF CHEMICAL SPILL.pdf" target="_blank">IN CASE OF CHEMICAL SPILL</a></li>
+              <li><a href="All PDF Links/IN EMERGENCY/IN CASE OF GAS LEAK.pdf" target="_blank">IN CASE OF GAS LEAK</a></li>
+              <li><a href="All PDF Links/IN EMERGENCY/IN CASE OF EARTHQUAKE.pdf" target="_blank">IN CASE OF EARTHQUAKE</a></li>
+              <li><a href="All PDF Links/IN EMERGENCY/Emergency Numbers.pdf" target="_blank">EMERGENCY CONTACT NUMBERS</a></li>
+            </ol>
+
+          </div>
+        </div>              
+        <div id="iclassification" class="tabcontent">
+          <div class="mx-2 my-2 ">
+            <p>
+              <u><b>Class 4:</b></u><br>
+              <b>An incident that causes multiple fatalities ( more than one ), </b>space mishaps occurring during space vehicle operations, and/or damage to equipment or property equal to or greater than 1.0 crore or if the failure/damage is likely to have significant impact on the programme.<br>
+              <br>
+              <u><b>Class 3:</b></u><br>
+              <b>An incident that causes a death and/or damage to equipment </b>or property equal to or greater than 20 lakhs but less than 1.0 crore or if the failure/damage is likely to have significant delay in the project schedule.<br>
+              <br>
+              <u><b>Class 2:</b></u><br>
+              <b>An incident that results in permanent total disability of one or more </b>persons; or hospitalization (for other than observation) of three or more persons; and/or damage to equipment or property equal to or greater than 10 lakhs but less than 20 lakhs.<br>
+              <br>
+              <u><b>Class 1:</b></u><br>
+              <b>An incident that results in permanent partial disability or Lost </b>Time Accidents (LTA) greater than 48 hours; and/or damage to equipment or property equal to or greater than 2.0 lakhs but less than 10 lakhs.<br>
+              <br>
+              <u><b>Class 0:</b></u><br>
+              <b>An incident that results in temporary total disability or Lost </b>Time Accidents (LTA) less than 48 hours; and/or damage to equipment or property less than 2.0 lakhs.<br>
+              <br>
+              <u><b>Near Miss:</b></u><br>
+              <b>An occurrence in which there is no injury or minor injury </b>requiring first-aid, no significant equipment property damage (less than 1.0 lakh), and no significant interruption of productive work, butpossesses a high potential to cause an accident.<br>
+              <br>
+            </p>
+          </div>
+        </div>
+        <div id="msds" class="tabcontent">
+          <div class="mx-2 my-2">
+            <p>
+              Large number of hazardous/toxic gases and chemicals are used for processing silicon wafers in 8" & 6" fab-lines at SCL. Material Safety Data Sheets (MSDS) of various gases/chemicals used at SCL are complied, as under, for ease of retrieval of information pertaining hazards posed by particular gas/chemical, guidelines for its safe handling/storage, disposal etc.
+            </p>
+            <div class="row">
+              <div class="col-12">
+                <table class="table-small table-bordered border-5" border-spacing="30" width="100%">
+                  <tr>
+                    <th>Gases</th>
+                    <th>Chemicals</th>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Ammonia.pdf" target="_blank">AMMONIA(NH<sub>3</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Ammonium Hydroxide.pdf" target="_blank">AMMONIUM HYDROXIDE(NH<sub>4</sub>OH)</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Argon.pdf" target="_blank">ARGON(Ar)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/BT - 208.pdf" target="_blank">BT-208</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Arsine.pdf" target="_blank">ARSINE(AsH<sub>3</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Buffered Hydrofluoric Acid 63U (BHF-63U).pdf" target="_blank">BUFFERED HYDROFLUORIC ACID 63U [BHF-63U]</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Boron Trichloride (BCl3).pdf" target="_blank">BORON TRICHLORIDE(BCl<sub>3</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Cerium (IV) Sulphate Solution.pdf" target="_blank">CERIUM (IV) SULPHATE SOLUTION</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Boron Trifluoride (BF3).pdf">BORON TRIFLUORIDE(BF<sub>3</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Choline Etchant.pdf" target="_blank">CHOLINE ETCHANT</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Carbon Di Oxide (CO2).pdf" target="_blank">CARBON DIOXIDE(CO<sub>2</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Developer AZ 300 MIF.pdf" target="_blank">DEVELOPER AZ 300 MIF</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Chlorine (Cl2).pdf" target="_blank">CHLORINE(Cl<sub>2</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/DUV 42S-6.pdf" target="_blank">DUV 42S-6</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Diborane (B2H6).pdf" target="_blank">DIBORANE(B<sub>2</sub>H<sub>6</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/EC Solvent.pdf" target="_blank">EC SOLVENT</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Dichlorosilane (SiH2Cl2).pdf" target="_blank">DICHLORO SILANE(SiH<sub>2</sub>Cl<sub>2</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Ethylene Glycol.pdf" target="_blank">ETHYLENE GLYCOL</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Difluoro Methane R32 (CH2F2).pdf" target="_blank">DIFLUOROMETHANE[R 32](CH<sub>2</sub>F<sub>2</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Flourinert FC 770.pdf" target="_blank">FLOURINERT FC 770</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Fluorine (F2).pdf" target="_blank">FLUORINE[AS GAS MIX](F<sub>2</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Hexamethyl disilazane (HDMS).pdf" target="_blank">HMDS</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Germanium Tetrafluoride (GeF4).pdf" target="_blank">GERMANIUM TETRAFLUORIDE(GeF<sub>4</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Hydrochloric Acid.pdf" target="_blank">HYDRO CHLORIC ACID(HCl)</a></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Helium (He).pdf" target="_blank">HELIUM(He)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Hydrgen Peroxide.pdf" target="_blank">HYDROGEN PEROXIDE(H<sub>2</sub>O<sub>2</sub>)</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Hexafluoro butadiene (C4F6).pdf" target="_blank">HEXA FLOUROBUTADIENE(C<sub>4</sub>F<sub>6</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Iso-Propyl Alcohol (IPA).pdf" target="_blank">ISO-PROPYL ALCOHOL[IPA]</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Hydrogen Bromide (HBr).pdf" target="_blank">HYDROGEN BROMIDE(HBr)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/KFR M35G 27 cP.pdf" target="_blank">KFA M35G 27cP</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Hydrogen (H2).pdf" target="_blank">HYDROGEN(H<sub>2</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/MEGAPOSIT SPR 955CM-0.9 Positive Photoresist.pdf" target="_blank">MEGAPOSIT SPR 955CM -0.9 POSITIVE PHOTORESIST</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Hydrogen Chloride (HCl).pdf" target="_blank">HYDROGEN CHLORIDE(HCl)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Mixed Acid (Nitric + HF).pdf" target="_blank">MIXED ACID [NITRIC + HF](HF + HNO<sub>3</sub>)</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Methane (CH4).pdf" target="_blank">METHANE[AS GAS MIX](CH<sub>4</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/NMP.pdf" target="_blank">NMP(n-METHYL-2-PYRROLIDONE)</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Nitrogen (N2).pdf" target="_blank">NITROGEN(N<sub>2</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/PFR IX420H 32cP.pdf" target="_blank">PFR IX420H 32cP</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Nitrogen Trifluoride (NF3).pdf" target="_blank">NITROGEN TRIFLUORIDE(NF<sub>3</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Phosphoric Acid.pdf" target="_blank">PHOSPHORIC ACID(H<sub>3</sub>PO<sub>4</sub>)</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Nitric Oxide (NO).pdf" target="_blank">NITRIC OXIDE(NO)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/PL4219 Slurry.pdf" target="_blank">PL 4219 SLURRY </a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Nitrous Oxide (N2O).pdf" target="_blank">NITROUS OXIDE(N<sub>2</sub>O)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Semi-Sperse W-2000 Slurry.pdf" target="_blank">SEMI-SPERSE W-2000 SLURRY</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Octafluoro cyclobutane (C4F8).pdf" target="_blank">OCTAFLUOROCYCLOBUTANE(C<sub>4</sub>F<sub>8</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Galden HT 135 solvent.pdf" target="_blank">SOLVENT GALDEN HT 135</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Phosphine (PH3).pdf" target="_blank">PHOSPHINE(PH<sub>3</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Stripper EKC-265.pdf" target="_blank">STRIPPER EKC-265 </a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Silane (SiH4).pdf" target="_blank">SILANE(SiH<sub>4</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Sulphuric Acid.pdf" target="_blank">SULPHURIC ACID(H<sub>2</sub>SO<sub>4</sub>)</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Silicon Tetrachloride (SiCl4).pdf" target="_blank">SILICON TETRACHLORIDE(SiCl<sub>4</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Sumiresist PEK-136A8.pdf" target="_blank">SUMIRESIST PEK - 136A8</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Silicon Tetrafluoride (SiF4).pdf" target="_blank">SILICON TETRAFLUORIDE(SiF<sub>4</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Sumiresist PFI-93B4E.pdf" target="_blank">SUMIRESIST PFI-93B4E</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Sulphur Hexafluoride (SF6).pdf" target="_blank">SULPHUR HEXAFLOURIDE(SF<sub>6</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/TDMAT.pdf" target="_blank">TDMAT</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Tetrakis (dimethylamino) titanium(IV) TDMAT.pdf" target="_blank">TDMAT(C<sub>8</sub>H<sub>24</sub>N<sub>8</sub>Ti)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/TEB.pdf">TEB[TRIETHYLBORATE](B(OC<sub>2</sub>H<sub>5</sub>))</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Tetraethoxy Silane (TEOS).pdf" target="_blank">TEOS(C<sub>8</sub>H<sub>20</sub>O<sub>4</sub>Si)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/TEOS (Tetraethyl Orthosilicate).pdf" target="_blank">TEOS (TETRAETHYL ORTHOSILICATE)</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Tungsten Hexafluoride (WF6).pdf" target="_blank">TUNGSTEN HEXAFLUORIDE(WF<sub>6</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/TMPO.pdf" target="_blank">TMPO (TRIMETHYLPHOSPHATE)</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Xenon (Xe).pdf" target="_blank">XENON(Xe)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/UV2 210 GS-0.4 Deep UV Positive Photoresist.pdf" target="_blank">UV210GS-0.4 POSITIVE DEEP UV PHOTORESIST</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Trifluoromethane (Freon-23) (CHF3).pdf" target="_blank">HALOCARBON[FREON-23] TRIFLOUROMETHANE(CHF<sub>3</sub>)</a></td>
+                    <td><a href="All PDF Links/MSDS/Chemicals/Hydrofluoric Acid.pdf" target="_blank">HYDROFLORIC ACID(HF)</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Carbon Tetrafluoride (Freon-14).pdf" target="_blank">HALOCARBON[FREON-14]CARBON TETRAFLUORIDE(CF<sub>4</sub>)</a></td>
+                    <td>--</td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="All PDF Links/MSDS/Gases/Halocarbon 116 (C2F6).pdf" target="_blank">HALOCARBON [FREON-116] HEXAFLUROETHANE(C<sub>2</sub>F<sub>6</sub>)</a></td>
+                    <td>--</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="emt" class="tabcontent">
+          <div class="mx-2 my-2">
+            <p>
+              All chemicals/gases shall be used with due care as per the recommended handling/storage procedures and with proper PPE (Personal Protection Equipment) to avoid exposure to toxic chemicals/gases. In case of accidental exposure to any chemical/gas the affected person(s) shall be given first aid, immediately and rushed to the nearest hospital/dispensary for further treatment, as may be required. While medical staff typically treats such patients symptomatically, a compilation of the suggested antidotes/treatment specific to the chemical/gas exposure is made in consultation with medical experts from All India Institute of Medical Sciences (AIIMS), New Delhi.
+            </p>
+            <ul type="square">
+              <li><a href="All PDF Links/EMERGENCY MEDICAL TREATMENT/FIRST AID Authorised Manual" target="_blank">
+              FIRST AID</a></li>
+              <li><a href="All PDF Links/EMERGENCY MEDICAL TREATMENT/Manual contents witn Front and Back cover" target="_blank">
+              EMERGENCY MEDICAL TREATMENT</a></li>                  
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid py-1">
+    <div class="text-light">
+      <div class="row">
+        <div class="col-1" style="background-color: rgba(0, 0, 0, 0.3);"></div>
+        <div class="col-5 pt-3 text-align pb-2" style="background-color: rgba(0, 0, 0, 0.3);color:#000d1a;">
+          <h6><b>Contact Us:-</b></h6>
+          <div style="text-align: left; color:#000d1a;">
+            Semi-Conductor Laboratory<br>Phase-8 Industrial Area<br>SAS Nagar, Punjab, 160071<br>Ph: 0172-229-6000<br>
+          </div>
+        </div>
+        <div class="col-3" style="background-color: rgba(0, 0, 0, 0.3);"></div>
+        <div class="col-3 pt-3 text-align pb-2" style="background-color: rgba(0, 0, 0, 0.3);color:#000d1a;">
+          <h6><b>Links:-</b></h6>
+          <div style="text-align: left;color:#000d1a;">
+            <a href="https://www.scl.gov.in/" target="_blank" style="color: red;">Visit SCL Website</a><br>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.2);color:#000d1a;">
+          <b>Designed & Developed by: IT&ND/PPG</b>
+        </div>
+    </div> 
+  </div>
+
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+
+
+  </body>
+  </html>

@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Bootstrap jQuery -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+
+  <style>
+    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+      background-color: white;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+            background-image: url('try1.jpg');
+
+      }
+    .tab {     
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+
+
+    }
+
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 14px 8px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {  
+      padding: 0px 12px;
+      border-bottom: 1px solid #ccc;
+      border-top:1px solid #ccc;
+      border-left: none;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      height: 40px;
+      width: 40px;
+    }
+
+    .nav > .nav-item > .active {
+      color: black;
+      font-weight: bold;
+    }
+
+    ul.nav > li > a:hover {
+      background-color: #1e23f0;
+      color: #683034;
+      border-style: solid;
+      font-weight: bold;     
+    }
+
+
+  </style>
+  <title>SCL</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-muted">
+      <div class="col-4 navbar-brand ">
+        <img src="scllogo.png" width="50" height="50" alt="" style="border-radius: 5px;">
+      </div>
+      <div class="col-6 mt-2">
+        <h6><b><font size="5">&nbsp&nbsp&nbsp&nbsp&nbspSemi-Conductor Laboratory</font></b>
+          <br>
+          <b>Ministry of Electronics & Information Technology</b></h6>
+        </div>
+        <div>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <img class="pull-right" src="digit.png" class="img-fluid" id="eye" width="120px" height="60px">
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <hr>
+
+      <h1 style="text-align: center;"><b>SCL FIRE AND SAFETY SYSTEMS</b></h1>
+      <i>
+        <marquee style="font-family: Book Antiqua" scrolldelay="100" bgcolor="#4169e1" height="35"><font size="5" color="white">
+          <q>Safety is no accident.</q>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <q>Safety is as simple as ABC. Always be careful.</q>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <q>The safest risk is the one you did not take.</q>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <q>Be aware-Takecare.</q></font>
+        </marquee>
+      </i>
+    </div>
+
+    <div class="container-fluid py-1"> <!--HORIZONTAL MENU-->
+      <ul class="nav nav-pills justify-content-center" style="background-color: lightblue;" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" href="intro.html" style="background-color: lightblue;">HOME</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="All PDF Links/Left side/Safety Policy-Final.pdf" target="_blank" style="background-color: lightblue;">SAFETY POLICY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="compliances.html" target="_blank" style="background-color: lightblue;">STATUTORY COMPLIANCES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="downloads.html" target="_blank" style="background-color: lightblue;">DOWNLOADS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="All PDF Links/Left side/article.pdf" target="_blank" style="background-color: lightblue;">ARTICLE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="All PDF Links/Left side/Emergency Numbers.pdf" target="_blank" style="background-color: lightblue;">EMERGENCY CONTACT NUMBERS</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+          
+          <div class="col-12">
+            <table class="table table-striped border-5 border-info table-hover">
+              <tr>
+            <th class="text-center mt-2" style="color:red;"><br><b><h4>STATUTORY COMPLIANCES</h4></b></th>
+          </tr>
+            <div class="mx-2" style="font-size:115%;"><tbody>
+
+            <td><a href="All PDF Links/Left side/compliances/Renewal Licence_storage Liquidfied Gases under SMPV( U) Rules 2016 valid till 30 09-2022R.pdf">
+                <b>CCOE licence for storage of liquified Nitrogen, Oxygen and Argon gas.</b></a></td></tr>
+
+            <td><a href="All PDF Links/Left side/compliances/CCOE Licence to Store Compressed Gas in Cylinders.pdf">
+                <b>CCOE licence for storage of compressed gas cyclinder.</b></a></td></tr>
+
+            <td><a href="All PDF Links/Left side/compliances/CCOE Lisence for Filling & Storage of HYDROGEN gas cylinders.pdf"><b>
+                CCOE consent for filling and storage/possession of Hydrogen gas cyclinder at SCL.</b></a></td></tr>
+
+            <td><a href="All PDF Links/Left side/compliances/licence to opearte wireless.pdf">
+                <b>Licence for operation of wireless sets at SCL.</b></a></td></tr>
+
+            <td><a href="All PDF Links/Left side/compliances/Consent to operate under Water Act.pdf"><b>Consent to operate under
+                Water Act, 1974.</b></a></td></tr>
+
+            <td><a href="All PDF Links/Left side/compliances/Consent to operate under Air Act.pdf">
+              <b>Consent to operate under Air Act, 1981.</b></a></td></tr>
+
+            <td><a href="All PDF Links/Left side/compliances/Authorisation HWM_PPCB.pdf"><b>
+                Authorization under hazardous waste&nbsp(management, handling, trans-boundary movement) rules, 2008.</b></a></td></tr>
+            <td><a href="All PDF Links/Left side/compliances/NOC dt. 31.1.12 Valid upto 25.2.12.pdf"><b>
+                Consent to establish&nbsp(NOC) for fab expansion&nbsp(upgradation)&nbspgranted under Water Act, 1974 and Air Act, 1981.
+                </b></a></td></tr>
+
+            <td><a href="All PDF Links/Left side/compliances/Authorization AREB _Licence_846959 _ GAMA CHAMBER.pdf">
+                <b>AREB - AUTHORIZATION FOR POSSESSION AND OPERATION OF GAMMA IRRADIATION CHAMBER </b></a></td></tr>  
+            </div></tbody></table>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+   <div class="container-fluid py-1">
+    <div class="text-light">
+      <div class="row">
+        <div class="col-1" style="background-color: rgba(0, 0, 0, 0.3);"></div>
+        <div class="col-5 pt-3 text-align pb-2" style="background-color: rgba(0, 0, 0, 0.3);color:#000d1a;">
+          <h6><b>Contact Us:-</b></h6>
+          <div style="text-align: left; color:#000d1a;">
+            Semi-Conductor Laboratory<br>Phase-8 Industrial Area<br>SAS Nagar, Punjab, 160071<br>Ph: 0172-229-6000<br>
+          </div>
+        </div>
+        <div class="col-3" style="background-color: rgba(0, 0, 0, 0.3);"></div>
+        <div class="col-3 pt-3 text-align pb-2" style="background-color: rgba(0, 0, 0, 0.3);color:#000d1a;">
+          <h6><b>Links:-</b></h6>
+          <div style="text-align: left;color:#000d1a;">
+            <a href="https://www.scl.gov.in/" target="_blank" style="color: red;">Visit SCL Website</a><br>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.2);color:#000d1a;">
+          <b>Designed & Developed by: IT&ND/PPG</b>
+        </div>
+    </div> 
+  </div>
+</body>
+</html>
